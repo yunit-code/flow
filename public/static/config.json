@@ -1,13 +1,27 @@
 {
   "version": "1.0.0",
-  "lasttime": "2022-07-22 15:31:39",
+  "lasttime": "2023-01-09 12:16:44",
   "author": "申龙",
-  "className": "basics",
+  "className": "flow",
   "module": [
     {
-      "classId": "idm.component.basics.text",
+      "classId": "idm.component.flow.text",
       "comName": "文本",
       "className": "IText",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.irect",
+      "comName": "矩形",
+      "className": "IRect",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.icircle",
+      "comName": "圆形",
+      "className": "ICircle",
       "comType": "common",
       "comLangue": "vue"
     }

@@ -31,4 +31,7 @@ export default {
 <style lang="scss">
 #app{
 }
+.d-flex{
+  display: flex;
+}
 </style>
