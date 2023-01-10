@@ -1,0 +1,294 @@
+{
+    "classId": "idm.component.flow.idiamond",
+    "comName": "菱形",
+    "className": "IDiamond",
+    "comType": "common",
+    "comLangue": "vue",
+    "compositeAttr": [
+        {
+            "type": "input",
+            "layoutType": "inline",
+            "text": "唯一标识",
+            "bindKey": "ctrlId",
+            "disabled": true,
+            "default": "@[packageid]",
+            "desc": "",
+            "helpUrl": ""
+        },
+        {
+            "type": "group",
+            "text": "基本属性",
+            "desc": "提供设置组件能达到展示效果的基本属性设置信息",
+            "children": [
+                {
+                    "type": "textarea",
+                    "layoutType": "inline",
+                    "text": "文本内容",
+                    "bindKey": "fontContent",
+                    "default": "自定义文本"
+                },
+                {
+                    "type": "select",
+                    "layoutType": "inline",
+                    "text": "文本水平",
+                    "bindKey": "textAlign",
+                    "default": "center",
+                    "dictionary": [
+                        {
+                            "label": "居左",
+                            "value": "flex-start"
+                        },
+                        {
+                            "label": "居中",
+                            "value": "center"
+                        },
+                        {
+                            "label": "居右",
+                            "value": "flex-end"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "layoutType": "inline",
+                    "text": "文本垂直",
+                    "bindKey": "textVertical",
+                    "default": "center",
+                    "dictionary": [
+                        {
+                            "label": "居上",
+                            "value": "flex-start"
+                        },
+                        {
+                            "label": "居中",
+                            "value": "center"
+                        },
+                        {
+                            "label": "居下",
+                            "value": "flex-end"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "text": "样式设置",
+            "desc": "点击？查看样式设置用法指南",
+            "helpUrl": "",
+            "children": [
+                {
+                    "type": "input",
+                    "layoutType": "inline",
+                    "text": "宽",
+                    "desc": "填写auto则为自适应，或者使用px、%、vw等单位，比如100%、100px、100vw等等",
+                    "bindKey": "width",
+                    "default": "100%"
+                },
+                {
+                    "type": "input",
+                    "layoutType": "inline",
+                    "text": "高",
+                    "desc": "填写auto则为自适应，或者使用px、%、vh等单位，比如100%、100px、100vh等等",
+                    "bindKey": "height",
+                    "default": "100%"
+                },
+                {
+                    "type": "box",
+                    "layoutType": "block",
+                    "text": "内外边距",
+                    "bindKey": "box",
+                    "default": {
+                        "marginTopVal": "",
+                        "marginRightVal": "",
+                        "marginBottomVal": "",
+                        "marginLeftVal": "",
+                        "paddingTopVal": "",
+                        "paddingRightVal": "",
+                        "paddingBottomVal": "",
+                        "paddingLeftVal": ""
+                    }
+                },
+                {
+                    "type": "colorPicker",
+                    "layoutType": "inline",
+                    "text": "背景色",
+                    "bindKey": "bgColor",
+                    "placeholder": "请选择颜色",
+                    "default": {}
+                },
+                {
+                    "type": "colorPicker",
+                    "layoutType": "inline",
+                    "text": "边框色",
+                    "bindKey": "borderColor",
+                    "placeholder": "请选择颜色",
+                    "default": {
+                        "hex8": "#000000FF"
+                    }
+                },
+                {
+                    "type": "inputNumber",
+                    "layoutType": "inline",
+                    "text": "边框宽",
+                    "desc": "设置菱形边框宽度，单位：px",
+                    "bindKey": "borderWidth",
+                    "default": 3
+                },
+                {
+                    "type": "font",
+                    "layoutType": "block",
+                    "text": "文字",
+                    "bindKey": "font",
+                    "default": {
+                        "fontColors": {
+                            "hex": "#000000",
+                            "hex8": "#000000FF"
+                        },
+                        "fontWeight": "400",
+                        "fontStyle": "normal",
+                        "fontSize": 16,
+                        "fontSizeUnit": "px",
+                        "fontTextAlign": "center",
+                        "fontDecoration": "",
+                        "fontLetterSpacing": 0,
+                        "fontLetterSpacingUnit": "px"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "table",
+            "text": "主题设置",
+            "desc": "点击？查看主题设置用法指南",
+            "bindKey": "themeList",
+            "tabText": "主题[index]",
+            "default": [
+                {
+                    "key": "blue",
+                    "mainColor": {
+                        "hex": "#CFDDFA",
+                        "hex8": "#CFDDFAFF"
+                    }
+                },
+                {
+                    "key": "red",
+                    "mainColor": {
+                        "hex": "#E21A1A",
+                        "hex8": "#E21A1AFF"
+                    }
+                },
+                {
+                    "key": "green",
+                    "mainColor": {
+                        "hex": "#0EAF64",
+                        "hex8": "#0EAF64FF"
+                    }
+                }
+            ],
+            "children": [
+                {
+                    "type": "select",
+                    "layoutType": "inline",
+                    "text": "主题标识",
+                    "bindKey": "key",
+                    "multiple": false,
+                    "desc": "用于设置主题的标识，此项需要搭配自定义开发切换主题的功能，例如：蓝色标识为blue，用户切换主题的时候存储到数据库中的标识为blue，则这里填写为blue",
+                    "default": "",
+                    "placeholder": "例如：blue",
+                    "ctrlAttrObject": {
+                        "mode": "combobox"
+                    },
+                    "dictionary": [
+                        {
+                            "label": "blue",
+                            "value": "blue"
+                        },
+                        {
+                            "label": "red",
+                            "value": "red"
+                        },
+                        {
+                            "label": "green",
+                            "value": "green"
+                        }
+                    ]
+                },
+                {
+                    "type": "colorPicker",
+                    "layoutType": "inline",
+                    "text": "主要颜色",
+                    "bindKey": "mainColor",
+                    "desc": "主题的主要颜色",
+                    "placeholder": "请选择颜色",
+                    "display": "@[key]"
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "text": "高级",
+            "desc": "点击？查看高级设置用法指南",
+            "children": [
+                {
+                    "type": "actionSelect",
+                    "layoutType": "block",
+                    "text": "点击时动作",
+                    "bindKey": "clickFunction",
+                    "desc": "点击的时候会调用设置的自定义函数，接收参数为格式为{...自定义的}",
+                    "multiple": true
+                },
+                {
+                    "type": "select",
+                    "layoutType": "inline",
+                    "text": "动态内容",
+                    "bindKey": "dataSourceType",
+                    "desc": "通过这些方式去动态获取结果值显示成文本内容",
+                    "dictionary": [
+                        {
+                            "label": "属性配置",
+                            "value": "attribute"
+                        },
+                        {
+                            "label": "页面统一接口",
+                            "value": "pageCommonInterface"
+                        },
+                        {
+                            "label": "自定义函数",
+                            "value": "customFunction"
+                        }
+                    ],
+                    "default": "attribute"
+                },
+                {
+                    "type": "input",
+                    "layoutType": "inline",
+                    "text": "结果集名",
+                    "bindKey": "dataName",
+                    "desc": "页面接口设定的结果集名称，位置为：页面设置》高级设置》页面接口",
+                    "default": "",
+                    "placeholder": "示例：resultData",
+                    "display": "@[dataSourceType=='pageCommonInterface']"
+                },
+                {
+                    "type": "textarea",
+                    "layoutType": "inline",
+                    "text": "显示字段",
+                    "bindKey": "dataFiled",
+                    "desc": "根据接口返回数据格式指定结果集的字段，比如结果集名为resultData（自定义接口忽略）且它的值为{data:{filedName:[{\"text\":\"\",\"value\":\"\",\"check\":true}]}}，则这里应该填写data.filedName",
+                    "default": "",
+                    "placeholder": "示例：data.filedName 或者 [0].data[0].filedName",
+                    "display": "@[dataSourceType!='customFunction']"
+                },
+                {
+                    "type": "actionSelect",
+                    "layoutType": "block",
+                    "text": "自定义函数",
+                    "bindKey": "customFunction",
+                    "desc": "获取动态文本内容、自定义接口回调、页面统一接口回调的时候会调用此方法，返回数据格式为字符串，接收参数：{...自定义,interfaceData:自定义接口或页面统一接口的返回结果,expressData:表达式替换后的结果}",
+                    "multiple": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lasttime": "2023-01-09 12:16:44",
+  "lasttime": "2023-01-10 13:18:34",
   "author": "申龙",
   "className": "flow",
   "module": [
@@ -22,6 +22,62 @@
       "classId": "idm.component.flow.icircle",
       "comName": "圆形",
       "className": "ICircle",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.idiamond",
+      "comName": "菱形",
+      "className": "IDiamond",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.itriangle",
+      "comName": "三角形",
+      "className": "ITriangle",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.istartnode",
+      "comName": "开始节点",
+      "className": "IStartNode",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.icommonlynode",
+      "comName": "一般节点",
+      "className": "ICommonlyNode",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.isendcopynode",
+      "comName": "抄送节点",
+      "className": "ISendCopyNode",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.ijumpnode",
+      "comName": "跳转节点",
+      "className": "IJumpNode",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.isubprocessnode",
+      "comName": "子流程",
+      "className": "ISubprocessNode",
+      "comType": "common",
+      "comLangue": "vue"
+    },
+    {
+      "classId": "idm.component.flow.istopnode",
+      "comName": "结束节点",
+      "className": "IStopNode",
       "comType": "common",
       "comLangue": "vue"
     }
