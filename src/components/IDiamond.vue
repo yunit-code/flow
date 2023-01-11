@@ -135,6 +135,8 @@ export default {
         // }
         let bgColorObj = {
           'background-color': item.mainColor ? IDM.hex8ToRgbaString(item.mainColor.hex8) : "",
+        }, borderColorObj = {
+          'background-color': item.minorColor ? IDM.hex8ToRgbaString(item.minorColor.hex8) : "",
         };
         IDM.setStyleToPageHead(
           "." +
@@ -143,6 +145,14 @@ export default {
           " #" +
           (this.moduleObject.id + '::before' || "module_demo"),
           bgColorObj
+        );
+        IDM.setStyleToPageHead(
+          "." +
+          themeNamePrefix +
+          item.key +
+          " #" +
+          (this.moduleObject.id || "module_demo"),
+          borderColorObj
         );
       }
     },

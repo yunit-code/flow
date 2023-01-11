@@ -81,16 +81,18 @@ export default {
         //     //此处比对是不渲染输出不用的样式，如果页面会刷新就可以把此处放开
         //     continue;
         // }
-        let bgColorObj = {
+        let colorObj = {
           'background-color': item.mainColor ? IDM.hex8ToRgbaString(item.mainColor.hex8) : "",
+          'border-color': item.minorColor ? IDM.hex8ToRgbaString(item.minorColor.hex8) : "",
         };
+
         IDM.setStyleToPageHead(
           "." +
           themeNamePrefix +
           item.key +
           " #" +
           (this.moduleObject.id || "module_demo"),
-          bgColorObj
+          colorObj
         );
       }
     },

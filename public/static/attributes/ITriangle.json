@@ -83,9 +83,7 @@
                     "text": "边框色",
                     "bindKey": "borderColor",
                     "placeholder": "请选择颜色",
-                    "default": {
-                        "hex8": "#000000FF"
-                    }
+                    "default": {}
                 },
                 {
                     "type": "inputNumber",
@@ -109,18 +107,30 @@
                     "mainColor": {
                         "hex": "#CFDDFA",
                         "hex8": "#CFDDFAFF"
+                    },
+                    "minorColor": {
+                        "hex": "#1890FF",
+                        "hex8": "#1890FFFF"
                     }
                 },
                 {
                     "key": "red",
                     "mainColor": {
-                        "hex": "#E21A1A",
-                        "hex8": "#E21A1AFF"
+                        "hex": "#FCBFBF",
+                        "hex8": "#FCBFBFFF"
+                    },
+                    "minorColor": {
+                        "hex": "#FF4444",
+                        "hex8": "#FF4444FF"
                     }
                 },
                 {
-                    "key": "green",
-                    "mainColor": {
+                    "key":"green",
+                    "mainColor":{
+                        "hex": "#94F3C7",
+                        "hex8": "#94F3C7FF"
+                    },
+                    "minorColor": {
                         "hex": "#0EAF64",
                         "hex8": "#0EAF64FF"
                     }
@@ -159,7 +169,16 @@
                     "layoutType": "inline",
                     "text": "主要颜色",
                     "bindKey": "mainColor",
-                    "desc": "主题的主要颜色",
+                    "desc": "主题的主要颜色，作用于背景色",
+                    "placeholder": "请选择颜色",
+                    "display": "@[key]"
+                },
+                {
+                    "type": "colorPicker",
+                    "layoutType": "inline",
+                    "text": "次要颜色",
+                    "bindKey": "minorColor",
+                    "desc": "主题的次要颜色，作用于边框",
                     "placeholder": "请选择颜色",
                     "display": "@[key]"
                 }
@@ -232,4 +251,3 @@
         }
     ]
 }
-      
