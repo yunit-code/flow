@@ -1,5 +1,5 @@
 # 菱形
-组件描述
+此组件是菱形组件，一般用于在悬浮层布局中构建流程的菱形节点，默认颜色随主题改变，可自定义颜色，自行拖拽大小
 ## 组件类ID（IDiamond）
 idm.component.flow.idiamond
 ## 组件开发语言（comLangue）
@@ -22,10 +22,20 @@ flow@1.0.0
 
 - 标识：`textAlign`
 - 默认值：`center`
+- 选项：
+	 - 居左【flex-start】
+	 - 居中【center】
+	 - 居右【flex-end】
+
 #### 文本垂直【textVertical】
 
 - 标识：`textVertical`
 - 默认值：`center`
+- 选项：
+	 - 居上【flex-start】
+	 - 居中【center】
+	 - 居下【flex-end】
+
 ### 样式设置
 #### 宽【width】
 填写auto则为自适应，或者使用px、%、vw等单位，比如100%、100px、100vw等等
@@ -38,7 +48,9 @@ flow@1.0.0
 #### 内外边距【box】
 
 - 标识：`box`
-- 默认值：```json{
+- 默认值：
+```json
+{
     "marginTopVal": "",
     "marginRightVal": "",
     "marginBottomVal": "",
@@ -47,15 +59,22 @@ flow@1.0.0
     "paddingRightVal": "",
     "paddingBottomVal": "",
     "paddingLeftVal": ""
-}```
+}
+```
 #### 背景色【bgColor】
 
 - 标识：`bgColor`
-- 默认值：```json{}```
+- 默认值：
+```json
+{}
+```
 #### 边框色【borderColor】
 
 - 标识：`borderColor`
-- 默认值：```json{}```
+- 默认值：
+```json
+{}
+```
 #### 边框宽【borderWidth】
 设置菱形边框宽度，单位：px
 - 标识：`borderWidth`
@@ -63,7 +82,9 @@ flow@1.0.0
 #### 文字【font】
 
 - 标识：`font`
-- 默认值：```json{
+- 默认值：
+```json
+{
     "fontColors": {
         "hex": "#000000",
         "hex8": "#000000FF"
@@ -76,11 +97,14 @@ flow@1.0.0
     "fontDecoration": "",
     "fontLetterSpacing": 0,
     "fontLetterSpacingUnit": "px"
-}```
+}
+```
 ### 主题设置【themeList】
 点击？查看主题设置用法指南
 - 标识：`themeList`
-- 默认值：```json[
+- 默认值：
+```json
+[
     {
         "key": "blue",
         "mainColor": {
@@ -114,7 +138,8 @@ flow@1.0.0
             "hex8": "#0EAF64FF"
         }
     }
-]```
+]
+```
 ### 高级
 #### 点击时动作【clickFunction】
 点击的时候会调用设置的自定义函数，接收参数为格式为{...自定义的}
@@ -125,6 +150,11 @@ flow@1.0.0
 通过这些方式去动态获取结果值显示成文本内容
 - 标识：`dataSourceType`
 - 默认值：`attribute`
+- 选项：
+	 - 属性配置【attribute】
+	 - 页面统一接口【pageCommonInterface】
+	 - 自定义函数【customFunction】
+
 #### 结果集名【dataName】
 页面接口设定的结果集名称，位置为：页面设置》高级设置》页面接口
 - 标识：`dataName`

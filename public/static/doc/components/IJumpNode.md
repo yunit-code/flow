@@ -1,5 +1,5 @@
 # 跳转节点
-组件描述
+此组件是跳转节点组件，一般用于在悬浮层布局中构建流程的跳转节点，默认颜色随主题改变，可自定义颜色，自行拖拽大小
 ## 组件类ID（IJumpNode）
 idm.component.flow.ijumpnode
 ## 组件开发语言（comLangue）
@@ -30,7 +30,10 @@ flow@1.0.0
 #### 背景色【bgColor】
 
 - 标识：`bgColor`
-- 默认值：```json{}```
+- 默认值：
+```json
+{}
+```
 #### 边框【border】
 
 - 标识：`border`
@@ -38,7 +41,9 @@ flow@1.0.0
 #### 内外边距【box】
 
 - 标识：`box`
-- 默认值：```json{
+- 默认值：
+```json
+{
     "marginTopVal": "",
     "marginRightVal": "",
     "marginBottomVal": "",
@@ -47,11 +52,14 @@ flow@1.0.0
     "paddingRightVal": "",
     "paddingBottomVal": "",
     "paddingLeftVal": ""
-}```
+}
+```
 #### 文字边距【fontBox】
 
 - 标识：`fontBox`
-- 默认值：```json{
+- 默认值：
+```json
+{
     "marginTopVal": "5px",
     "marginRightVal": "",
     "marginBottomVal": "",
@@ -60,11 +68,14 @@ flow@1.0.0
     "paddingRightVal": "",
     "paddingBottomVal": "",
     "paddingLeftVal": ""
-}```
+}
+```
 #### 文字【font】
 
 - 标识：`font`
-- 默认值：```json{
+- 默认值：
+```json
+{
     "fontColors": {
         "hex": "#000000",
         "hex8": "#000000FF"
@@ -77,7 +88,8 @@ flow@1.0.0
     "fontDecoration": "",
     "fontLetterSpacing": 0,
     "fontLetterSpacingUnit": "px"
-}```
+}
+```
 ### 图标样式
 #### 图标尺寸【iconSize】
 填写auto则为自适应，或者使用px、%、vw等单位，比如100%、100px、100vw等等
@@ -86,15 +98,21 @@ flow@1.0.0
 #### 图标颜色【iconColor】
 
 - 标识：`iconColor`
-- 默认值：```json{
+- 默认值：
+```json
+{
     "hex8": "#FFFFFFFF"
-}```
+}
+```
 #### 容器背景【iconContainerBgColor】
 
 - 标识：`iconContainerBgColor`
-- 默认值：```json{
+- 默认值：
+```json
+{
     "hex8": "#3388FFFF"
-}```
+}
+```
 #### 容器尺寸【containerSize】
 填写auto则为自适应，或者使用px、%、vw等单位，比如100%、100px、100vw等等
 - 标识：`containerSize`
@@ -102,7 +120,9 @@ flow@1.0.0
 #### 容器边距【containerBox】
 
 - 标识：`containerBox`
-- 默认值：```json{
+- 默认值：
+```json
+{
     "marginTopVal": "",
     "marginRightVal": "",
     "marginBottomVal": "",
@@ -111,11 +131,14 @@ flow@1.0.0
     "paddingRightVal": "",
     "paddingBottomVal": "7%",
     "paddingLeftVal": ""
-}```
+}
+```
 #### 容器边框【iconContainerBorder】
 
 - 标识：`iconContainerBorder`
-- 默认值：```json{
+- 默认值：
+```json
+{
     "border": {
         "top": {
             "style": "solid",
@@ -168,7 +191,8 @@ flow@1.0.0
             "radiusUnit": "%"
         }
     }
-}```
+}
+```
 ### 高级
 #### 点击时动作【clickFunction】
 点击的时候会调用设置的自定义函数，接收参数为格式为{...自定义的}
@@ -179,6 +203,11 @@ flow@1.0.0
 通过这些方式去动态获取结果值显示成文本内容
 - 标识：`dataSourceType`
 - 默认值：`attribute`
+- 选项：
+	 - 属性配置【attribute】
+	 - 页面统一接口【pageCommonInterface】
+	 - 自定义函数【customFunction】
+
 #### 结果集名【dataName】
 页面接口设定的结果集名称，位置为：页面设置》高级设置》页面接口
 - 标识：`dataName`
