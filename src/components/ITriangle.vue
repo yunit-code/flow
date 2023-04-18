@@ -9,7 +9,14 @@ export default {
   data() {
     return {
       moduleObject: {},
-      propData: this.$root.propData.compositeAttr || {}
+      propData: this.$root.propData.compositeAttr || {
+        width: '200px',
+        height: '100px',
+        rightAnglePosition: 'leftBottom',
+        bgColor: {
+          hex8: '#CFDDFAFF'
+        }
+      }
     }
   },
   created() {

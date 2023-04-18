@@ -11,7 +11,68 @@ export default {
     return {
       moduleObject: {},
       propData: this.$root.propData.compositeAttr || {
-        fontContent: "文本"
+        fontContent: "自定义文本",
+        textAlign: 'center',
+        textVertical: 'center',
+        width: '100px',
+        height: '100px',
+        bgColor: {
+          hex8: '#CFDDFAFF'
+        },
+        border: {
+          border: {
+            top: {
+                style: 'solid',
+                width: 3,
+                widthUnit: 'px',
+                colors: {
+                    hex8: '#1890FFFF'
+                }
+            },
+            right: {
+                style: 'solid',
+                width: 3,
+                widthUnit: 'px',
+                colors: {
+                    hex8: '#1890FFFF'
+                }
+            },
+            bottom: {
+                style: 'solid',
+                width: 3,
+                widthUnit: 'px',
+                colors: {
+                    hex8: '#1890FFFF'
+                }
+            },
+            left: {
+                style: 'solid',
+                width: 3,
+                widthUnit: 'px',
+                colors: {
+                    hex8: '#1890FFFF'
+                }
+            }
+        },
+        radius: {
+            leftTop: {
+                radius: 50,
+                radiusUnit: '%'
+            },
+            rightTop: {
+                radius: 50,
+                radiusUnit: '%'
+            },
+            leftBottom: {
+                radius: 50,
+                radiusUnit: '%'
+            },
+            rightBottom: {
+                radius: 50,
+                radiusUnit: '%'
+            }
+        }
+        }
       }
     }
   },
@@ -46,7 +107,7 @@ export default {
               IDM.style.setBoxStyle(styleObject, element)
               break
             case 'border':
-              IDM.style.setBorderStyle(styleObject, element)
+              IDM.style.setBorderStyle(styleObject, element, true)
               break
             case 'bgColor':
               if (element.hex8) {

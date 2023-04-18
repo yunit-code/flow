@@ -13,7 +13,14 @@ export default {
     return {
       moduleObject: {},
       propData: this.$root.propData.compositeAttr || {
-        fontContent: "文本"
+        fontContent: "菱形",
+        width: '100px',
+        height: '200px',
+        textAlign: 'center',
+        textVertical: 'center',
+        bgColor: {
+            hex8: '#CFDDFAFF'
+          },
       }
     }
   },

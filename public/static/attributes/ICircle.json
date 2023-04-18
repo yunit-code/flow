@@ -129,7 +129,7 @@
                                 "width": 3,
                                 "widthUnit": "px",
                                 "colors": {
-                                    "hex8":"#000000FF"
+                                    "hex8":""
                                 }
                             },
                             "right": {
@@ -137,7 +137,7 @@
                                 "width": 3,
                                 "widthUnit": "px",
                                 "colors": {
-                                    "hex8":"#000000FF"
+                                    "hex8":""
                                 }
                             },
                             "bottom": {
@@ -145,7 +145,7 @@
                                 "width": 3,
                                 "widthUnit": "px",
                                 "colors": {
-                                    "hex8":"#000000FF"
+                                    "hex8":""
                                 }
                             },
                             "left": {
@@ -153,7 +153,7 @@
                                 "width": 3,
                                 "widthUnit": "px",
                                 "colors": {
-                                    "hex8":"#000000FF"
+                                    "hex8":""
                                 }
                             }
                         },

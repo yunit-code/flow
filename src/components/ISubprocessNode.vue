@@ -14,7 +14,73 @@ export default {
     return {
       moduleObject: {},
       propData: this.$root.propData.compositeAttr || {
-        fontContent: "Hello Word"
+        fontContent: "子流程节点",
+        width: '80px',
+          textAlign: 'center',
+          textVertical: 'center',
+          containerSize: '100%',
+          height: '100px',
+          iconSize: '40px',
+          iconColor: {
+            hex8: '#FFFFFFFF'
+          },
+          iconContainerBgColor: {
+            hex8: '#3388FFFF'
+          },
+          iconContainerBorder: {
+            border: {
+              top: {
+                  style: 'solid',
+                  width: 0,
+                  widthUnit: 'px',
+                  colors: {
+                      hex8: ''
+                  }
+              },
+              right: {
+                  style: 'solid',
+                  width: 0,
+                  widthUnit: 'px',
+                  colors: {
+                      hex8: ''
+                  }
+              },
+              bottom: {
+                  style: 'solid',
+                  width: 0,
+                  widthUnit: 'px',
+                  colors: {
+                      hex8: ''
+                  }
+              },
+              left: {
+                  style: 'solid',
+                  width: 0,
+                  widthUnit: 'px',
+                  colors: {
+                      hex8: ''
+                  }
+              }
+          },
+          radius: {
+              leftTop: {
+                  radius: 50,
+                  radiusUnit: '%'
+              },
+              rightTop: {
+                  radius: 50,
+                  radiusUnit: '%'
+              },
+              leftBottom: {
+                  radius: 50,
+                  radiusUnit: '%'
+              },
+              rightBottom: {
+                  radius: 50,
+                  radiusUnit: '%'
+              }
+          }
+        }
       }
     }
   },
